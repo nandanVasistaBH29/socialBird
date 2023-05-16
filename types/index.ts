@@ -7,4 +7,11 @@ export type UserType = {
 export type TweetType = {
   user: UserType;
   content: string;
+  id: string;
+  createdAt: string;
+  image?: string;
+  numberOfComments?: number;
+  numberOfRetweets?: number;
+  numberOfLikes?: number;
+  impressions?: number;
 };
