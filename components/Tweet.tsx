@@ -1,15 +1,6 @@
 import { StyleSheet, Image } from "react-native";
 import { Text, View } from "./Themed";
-type UserType = {
-  name: string;
-  image?: string;
-  id: string;
-  username: string;
-};
-type TweetType = {
-  user: UserType;
-  content: string;
-};
+import { TweetType } from "../types";
 type TweetProps = {
   tweet: TweetType;
 };
