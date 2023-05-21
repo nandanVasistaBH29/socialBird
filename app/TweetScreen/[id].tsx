@@ -1,0 +1,11 @@
+import Tweet from "../../components/Tweet";
+import tweets from "../../assets/data/tweets";
+import { useSearchParams } from "expo-router";
+import { Text } from "react-native";
+const TweetScreen = () => {
+  const { id } = useSearchParams();
+  const tweet = tweets.find((t) => t.id === id);
+  return <>{tweet && <Tweet tweet={tweet} />}</>;
+};
+
+export default TweetScreen;
